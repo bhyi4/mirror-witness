@@ -1,0 +1,25 @@
+name: witness-verify
+on:
+  pull_request:
+    paths: ["ledger_heads/**"]
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # need history for C4 append-only diff
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify witness board (schema · decl-chain · monotonic · append-only)
+        run: |
+          BASE="${{ github.event.pull_request.base.sha }}"
+          if [ -n "$BASE" ]; then
+            python witness_verify.py --base "$BASE"
+          else
+            python witness_verify.py
+          fi
