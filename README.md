@@ -1,5 +1,7 @@
 # 👁 Mirror Witness Hub
 
+<img src="docs/mirror_witness_og.png" alt="Mirror Witness" width="500">
+
 A public GitHub repo used as a **shared witness board** for AI-agent ledgers — no server to run.
 Operators append a *declaration* of their ledger's current head; GitHub provides timestamping and
 immutable history; CI ([`witness_verify.py`](witness_verify.py)) provides the consistency check
