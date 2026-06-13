@@ -7,7 +7,14 @@ Operators append a *declaration* of their ledger's current head; GitHub provides
 immutable history; CI ([`witness_verify.py`](witness_verify.py)) provides the consistency check
 that GitHub alone cannot.
 
-Part of the 🪞🔎🪪 [Mirror Stack](https://github.com/bhyi4/measure-mirror/tree/main/stack).
+Part of the 🪞🔎🪪 [Mirror Stack](https://github.com/bhyi4/measure-mirror/tree/main/stack):
+
+| Tool | Audits | Question |
+|---|---|---|
+| 🪞 [measure-mirror](https://github.com/bhyi4/measure-mirror) | AI evaluation claims | Is the **claim** honest? |
+| 🪪 [action-mirror](https://github.com/bhyi4/action-mirror) | Agent behaviour | Who did what, **provably**? |
+| 🔎 [provenance-mirror](https://github.com/bhyi4/provenance-mirror) | Content authenticity | Is the **origin** proven? |
+| 👁 **mirror-witness** (you are here) | Cross-operator witness board | **Who else witnessed it?** |
 
 ## What it proves (and what it doesn't)
 
