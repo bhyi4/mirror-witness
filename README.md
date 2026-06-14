@@ -18,6 +18,8 @@ Part of the 🪞🔎🪪 [Mirror Stack](https://github.com/bhyi4/measure-mirror/
 | 🔎 [provenance-mirror](https://github.com/bhyi4/provenance-mirror) | Content authenticity | Is the **origin** proven? |
 | 👁 **mirror-witness** (you are here) | Cross-operator witness board | **Who else witnessed it?** |
 
+💬 **[Discussions](https://github.com/orgs/mirror-stack/discussions)** — questions · ideas · independent reproductions welcome.
+
 ## What it proves (and what it doesn't)
 
 A declaration says: *"operator **O** declared, at commit time **T**, that ledger **L**'s head was
